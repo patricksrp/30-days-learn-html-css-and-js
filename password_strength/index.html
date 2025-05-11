@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qrcode</title>
+    <title>password</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <p>Enter your text or URL</p>
-        <input type="text" id="qrText" placeholder="Text or URL..."></input>
-        
-        <div class="imgBox" id="imgBox">
-            <img  id="qrImage">
+        <div class="input-box">
+            <input type="password" name="password" id="password" placeholder="Password...">
+            <button type="submit"><img src="img/next.png" alt="" srcset=""></button>
+            <p id="message">Password is <span id="strength"></span> </p>
         </div>
-        <button  onclick="GenerateQr()">Generate Qrcode</button>
     </div>
     <script src="index.js"></script>
 </body>
